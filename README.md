@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Full Stack Developer Technical Assessment
+
+## Introduction
+
+Welcome to our project! You will be contributing to a web application for one of our clients, a travel agency. Your task involves designing and implementing a scalable architecture using Next.js as the base. This includes considerations for microservices, serverless functions, or monolithic structures.
+
+There are no existing features implemented. Using the provided Figma file, you will build the frontend from scratch. Additionally, you will design the architecture of the web application using TypeScript and backend languages of your choice. This design should accommodate functionalities such as bookings, payments, destination searching, and storage.
+
+## Tasks
+
+### Task 1: Design Scalable Architecture
+
+**Objective:** Create a clear, readable, and understandable architectural plan for the web application.
+
+**Deliverable:**
+- A document (PDF or Markdown) outlining your proposed architecture.
+- Rationale for your chosen architecture (e.g., monolithic, microservices, serverless).
+- Plans for scalability, maintainability, and future expansion.
+- Overview of key components and their interactions.
+- Technologies and frameworks you plan to use.
+
+### Task 2: Implement Scalable Architecture
+
+**Objective:** Implement the backend architecture based on your design.
+
+**Deliverable:**
+- Backend codebase with clear documentation.
+- API endpoints for bookings, payments, searching, and storing destinations.
+- Integration with a database of your choice.
+- Consideration for error handling, logging, and security best practices.
+
+### Task 3: Implement Frontend Design from Figma
+
+**Objective:** Develop the frontend of the application based on the provided Figma design file.
+
+**Deliverable:**
+- Fully functional frontend using Next.js.
+- Integration with backend APIs.
+- Responsive design suitable for various devices.
+- Adherence to accessibility standards.
+
+### Bonus Tasks:
+
+### Task 4: Multi-Language Support
+
+**Objective:** Enhance accessibility by adding multi-language support to the application.
+
+**Deliverable:**
+- Internationalization (i18n) implementation for supporting multiple languages.
+- Translation of the user interface into at least one additional language.
+
+### Task 5: Implement Role-Based Access Control (RBAC)
+
+**Objective:** Strengthen security and usability by implementing role-based access control.
+
+**Deliverable:**
+- RBAC implementation for managing permissions (e.g., admins, regular users).
+- User management interface for assigning roles and permissions.
 
 ## Getting Started
 
-First, run the development server:
+1. **Fork and Clone the Repository**
+- **Fork the Repository:** Visit [GitHub repository](https://github.com/EveLabOfficial/fsd_assessment), click Fork to create a copy in your GitHub account.
+   
+- **Clone the Forked Repository:** Clone your fork to your local machine:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/fsd_assessment.git
+  Replace YOUR_USERNAME with your actual GitHub username.
 
-```bash
+2. **Install Project Dependencies**
+After cloning the repository, you'll need to install the project dependencies. This step is crucial for ensuring that all the necessary libraries and frameworks are available on your local development environment.
+
+3. **Navigate into your project's directory:**
+cd fsd_assessment
+Run the following command to install the project dependencies:
+npm install
+This command reads the package.json file in the project directory and installs all the dependencies listed there. It might take a few minutes to complete.
+
+4. **Create a task Branch**
+With your dependencies installed, you're almost ready to start coding. The next step is to create a task branch where you'll develop your assigned tasks:
+
+git checkout -b task-yourtaskename
+Replace yourfeaturename with a descriptive name for the task you're working on.
+
+5. **Running the Application**
+To run the application locally and see your changes in real-time, use the following command:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This command will start the development server and open the application in your default web browser. You can now begin implementing the assigned features, making sure to check your progress frequently by viewing the application in the browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. **Submitting Your Work**
+Once you have completed the tasks, please follow these steps to submit your work:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+7. **Push your branch to your forked repository on GitHub:**
+git push origin task-yourtaskname
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Prepare a brief overview of the tasks you've implemented, along with any feedback or comments you have about the assessment process.
+Email Miles at contact@evelab.tech with:
+A link to your forked repository.
+The overview of implemented tasks and any additional comments.
 
-## Learn More
+### Evaluation Criteria
+- **Architectural design:** Clarity, scalability, and rationale.
+- **CI/CD:** Regular commits.
+- **Frontend implementation:** Accurate implementation of the frontend.
+- **Code quality:** Readability, maintainability, and use of best practices.
+- **Functionality:** Completeness and correctness of implemented features.
+- **Performance:** Application load times and responsiveness.
+- **Testing:** Coverage and quality of tests.
+- **Documentation:** Clarity and completeness of documentation.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We look forward to seeing your contributions to the project and wish you the best of luck!
