@@ -4,7 +4,7 @@
 
 Welcome to our project! You will be contributing to a web application for one of our clients, a travel agency. Your task involves designing and implementing a scalable architecture using Next.js as the base. This includes considerations for microservices, serverless functions, or monolithic structures.
 
-There are no existing features implemented. Using the provided Figma file, you will build the frontend from scratch. Additionally, you will design the architecture of the web application using TypeScript and backend languages of your choice. This design should accommodate functionalities such as bookings, payments, destination searching, and storage.
+There are no existing features implemented. Using the provided Figma file, you will build the frontend from scratch. Additionally, you will design the architecture of the web application using TypeScript, NextJS and backend languages of your choice. This design should accommodate functionalities such as bookings, payments, destination searching, and storage.
 
 ## Tasks
 
@@ -38,10 +38,44 @@ There are no existing features implemented. Using the provided Figma file, you w
 - Integration with backend APIs.
 - Responsive design suitable for various devices.
 - Adherence to accessibility standards.
+- Integrate a 3D interactive map using ThreeJS (or any 3D Library) to display travel destinations. (On Plan Trip page)
+- Use REST APIs to fetch and display travel package data.
+- Implement state management for user sessions (e.g., Redux).
+- Ensure all forms are secure and validate input properly.
+- Write clear and concise documentation explaining the codebase and how to set it up.
+- Commit code to a Git repository and provide a clear commit history.
+
+
+### Task 4: Back-end Assignment
+
+**Objective:** Develop the back-end for the travel booking application.
+
+**Deliverable:**
+- Set up a headless CMS (e.g., Strapi, Sanity) for the content on the About Page, Blog Page, managing travel packages and managing user bookings.
+- Implement an API using Node.js that connects to both SQL (MySQL) and NoSQL (MongoDB) databases.
+- Create serverless functions to handle user authentication and booking processing.
+- Integrate Firebase for real-time updates and push notifications.
+- Ensure all endpoints are secure and follow best practices.
+- Use machine learning to provide personalized travel package recommendations based on user data.
+- Provide a clear architectural diagram and documentation explaining the back-end setup.
+- Commit code to a Git repository with a clear commit history.
+
+### Task 5: FullStack Assignment
+
+**Objective:** Complete the full travel booking application by integrating the front-end and back-end.
+
+**Deliverable:**
+- Combine the front-end and back-end assignments into a cohesive application.
+- Ensure smooth data flow between the front-end and back-end using JSON/REST APIs.
+- Implement state management throughout the application.
+- Optimize the application for performance and security.
+- Write documentation explaining how to deploy the application and how different parts interact.
+- Present the project to both technical and non-technical stakeholders, explaining key decisions and functionality.
+- Commit code to a Git repository with detailed commit messages and a well-structured branch strategy.
 
 ### Bonus Tasks:
 
-### Task 4: Multi-Language Support
+#### Task 6: Multi-Language Support
 
 **Objective:** Enhance accessibility by adding multi-language support to the application.
 
@@ -49,7 +83,7 @@ There are no existing features implemented. Using the provided Figma file, you w
 - Internationalization (i18n) implementation for supporting multiple languages.
 - Translation of the user interface into at least one additional language.
 
-### Task 5: Implement Role-Based Access Control (RBAC)
+#### Task 7: Implement Role-Based Access Control (RBAC)
 
 **Objective:** Strengthen security and usability by implementing role-based access control.
 
