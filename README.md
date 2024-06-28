@@ -151,4 +151,6 @@ The overview of implemented tasks and any additional comments.
 - **Testing:** Coverage and quality of tests.
 - **Documentation:** Clarity and completeness of documentation.
 
+**DEADLINE: SUNDAY 7TH JULY 23:59 BST**
+
 We look forward to seeing your contributions to the project and wish you the best of luck!
