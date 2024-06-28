@@ -152,5 +152,6 @@ The overview of implemented tasks and any additional comments.
 - **Documentation:** Clarity and completeness of documentation.
 
 **DEADLINE: SUNDAY 7TH JULY 23:59 BST**
+**No extensions will be considered.**
 
 We look forward to seeing your contributions to the project and wish you the best of luck!
