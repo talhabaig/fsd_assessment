@@ -59,6 +59,14 @@ There are no existing features implemented. Using the provided Figma file, you w
 
 ## Getting Started
 
+**You can download all the assets, fonts, and everything from Figma itself. If you do not know how, please follow the given YouTube tutorial on how to download images and assets from Figma.**
+
+**Video:**
+https://www.youtube.com/watch?v=__ABPkb0aF8&ab_channel=Figma
+
+**Figma File:**
+https://www.figma.com/design/lUKbXA4lcGwx4vqzYOT2dp/Eve-lab?node-id=1-8&t=HTYpxfMYoUTB7EQp-1  
+
 1. **Fork and Clone the Repository**
 - **Fork the Repository:** Visit [GitHub repository](https://github.com/EveLabOfficial/fsd_assessment), click Fork to create a copy in your GitHub account.
    
