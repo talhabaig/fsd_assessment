@@ -36,7 +36,7 @@ There are no existing features implemented. Using the provided Figma file, you w
 **Deliverable:**
 - Fully functional frontend using Next.js.
 - Integration with backend APIs.
-- Responsive design suitable for various devices.
+- Responsive design suitable for various devices. (Determine what the best responsive designs will be yourselves - the Figma file only shows Desktop)
 - Adherence to accessibility standards.
 - Integrate a 3D interactive map using ThreeJS (or any 3D Library) to display travel destinations. (On Plan Trip page)
 - Use REST APIs to fetch and display travel package data.
