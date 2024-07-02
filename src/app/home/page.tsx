@@ -4,7 +4,7 @@ import Content from "./Content";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full">
+    <div className="w-full">
       <Hero />
       <Content/>
     </div>
