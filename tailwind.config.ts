@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import type { PluginAPI } from 'tailwindcss/types/config';
 
 const config: Config = {
   content: [
@@ -20,15 +21,43 @@ const config: Config = {
       colors: {
         oceanBlue: '#0E3242',
         goldenSun: '#DFA42E',
-        deepSeaBlue: '#194C63',
         midnightBlue: '#0E3242',
         silverGray: '#8A9FA9',
-        skyBlue:'#6AB5D1',
+        skyBlue: '#6AB5D1',
         softBeige: '#F3EBE5',
-        
+      },
+      fontFamily: {
+        lato: ['Lato', 'sans-serif'],
+      },
+      placeholderColor: {
+        custom: '#8D9FA9',
       },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      placeholderColor: ['focus', 'hover'],
+      placeholderOpacity: ['focus', 'hover'],
+    },
+  },
+  plugins: [
+    function ({ addUtilities }: PluginAPI) {
+      addUtilities({
+        '.placeholder-custom::placeholder': {
+          color: '#8D9FA9',
+          fontFamily: 'Lato, sans-serif',
+          fontSize: '16px',
+          fontStyle: 'normal',
+          fontWeight: '400',
+          lineHeight: 'normal',
+          textTransform: 'lowercase',
+        },
+      }, {
+        respectPrefix: false,
+        respectImportant: false,
+      });
+    },
+  ],
 };
+
 export default config;
