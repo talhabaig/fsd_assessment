@@ -3,7 +3,7 @@ import Hero from "./Hero";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full">
+    <div className="w-full">
       <Hero />
     </div>
   );
