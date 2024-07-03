@@ -32,6 +32,3 @@
   font-variation-settings:
     "slnt" 0;
 }
-.text-base-white {
-  color: var(--base-white, #FFF);
-}
