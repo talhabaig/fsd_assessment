@@ -6,7 +6,7 @@ export default function Content() {
   const pathname = usePathname();
   return (
     <div className="pb-24 px-8">
-      <div className="p-8 bg-white max-w-[1062px] xs:h-[550px] md:h-[430px] m-auto md:mt-[-3rem] xs:mt-0 z-1 relative">
+      <div className="p-8 bg-white max-w-[1062px] xs:h-[610px] md:h-[430px] m-auto md:mt-[-3rem] xs:mt-0 z-1 relative">
         <div className="flex justify-center items-center mb-16">
           <img src="/Vision&mission.png" alt="vision&mission" />
         </div>
