@@ -11,7 +11,7 @@ export default function Content() {
         />
       </div>
       <div className="">
-        <div className="flex justify-center items-center w-full mx-4">
+        <div className="flex justify-center items-center w-full px-4">
           <div className="p-8 bg-white ">
             <div className="flex flex-col gap-[33px]">
               <span className="text-[#955C31] text-[20px] font-semibold leading-7">
