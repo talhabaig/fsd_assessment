@@ -2,6 +2,8 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ExploreMalysia from "../home/ExploreMalysia";
+import ExperienceSpeaks from "../home/ExperienceSpeaks";
 export default function Content() {
   const pathname = usePathname();
   return (
@@ -34,11 +36,11 @@ export default function Content() {
         </div>
       </div>
 
-      <div className="xs:px-12 lg:px-28 pb-28 pt-12 ">
-        <div className="3xl:container 3xl:max-w-[1500px] 3xl:mx-auto xs:flex-col lg:flex-row flex items-end justify-between">
+      <div className="sm:px-12 lg:px-28 pb-16 sm:pb-28 pt-12 ">
+        <div className="3xl:container 3xl:max-w-[1500px] 3xl:mx-auto flex-col gap-2 lg:gap-0 lg:flex-row flex items-end justify-between">
           <div className="basis-[47.7%] flex flex-col gap-[38px] items-start">
             <div className="flex flex-col gap-[19px] items-start">
-              <div className="text-charcoalblack font-playfair-display xs:text-[24px] lg:text-[48px] font-bold lg:leading-[62px] xs:leading-[36px] capitalize">
+              <div className="text-charcoalblack font-playfair-display text-[24px] lg:text-[48px] font-bold lg:leading-[62px] leading-[36px] capitalize">
                 Experience Halal Travel Like Never Before
               </div>
               <p className="text-charcoalblack font-lato text-[18px] font-normal leading-[28px]">
@@ -61,6 +63,8 @@ export default function Content() {
           </div>
         </div>
       </div>
+      <ExploreMalysia/>
+      <ExperienceSpeaks/>
     </div>
   );
 }

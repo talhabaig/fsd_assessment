@@ -124,20 +124,20 @@ export default function Content() {
       </div>
 
       <div className="p-8 md:px-16 md:pt-20 md:pb-16 lg:px-28 lg:py-28">
-        <div className="3xl:container 3xl:max-w-[1500px] 3xl:mx-auto flex flex-col gap-4 items-center md:flex-row md:items-end md:justify-between">
-          <div className="basis-[47.7%] flex flex-col gap-[38px] items-start">
+        <div className="3xl:container 3xl:max-w-[1500px] 3xl:mx-auto flex flex-col gap-8 md:gap-4 items-center md:flex-row md:items-end md:justify-between">
+          <div className="basis-[47.7%] flex flex-col gap-[15px] md:gap-[38px] items-start">
             <div className="flex flex-col gap-[19px] items-start">
               <div className="text-oceanBlue font-playfair-display text-[30px] md:text-[38px] lg:text-[48px] font-extrabold leading-[40px] md:leading-[50px] lg:leading-[62px] capitalize">
                 plan your trip
               </div>
-              <p className="text-darygray font-lato text-[16px] font-normal leading-[24px] capitalize">
+              <p className="text-darygray font-lato text-sm sm:text-[16px] font-normal sm:leading-[24px] capitalize">
                 We are pioneers in the halal travel industry, dedicated to
                 providing exceptional, culturally rich travel experiences that
                 adhere to halal standards.
               </p>
             </div>
             <div className="flex flex-col gap-1 items-start">
-              <div className="p-[10px] flex items-center gap-[10px]">
+              <div className="py-[5px] px-[10px] md:p-[10px] flex items-center gap-[10px]">
                 <span className="text-khaki">
                   <FontAwesomeIcon
                     icon={faPlus}
@@ -146,9 +146,11 @@ export default function Content() {
                     height={18}
                   />
                 </span>
-                <span className="text-gray">Access to exclusive deals on flights and hotels.</span>
+                <span className="text-gray font-inter text-sm sm:text-[16px] sm:leading-[24px] font-normal">
+                  Access to exclusive deals on flights and hotels.
+                </span>
               </div>
-              <div className="p-[10px] flex items-center gap-[10px]">
+              <div className="py-[5px] px-[10px] md:p-[10px] flex items-center gap-[10px]">
                 <span className="text-khaki">
                   <FontAwesomeIcon
                     icon={faPlus}
@@ -157,12 +159,12 @@ export default function Content() {
                     height={18}
                   />
                 </span>
-                <span className="text-gray">
+                <span className="text-gray font-inter text-sm sm:text-[16px] sm:leading-[24px] font-normal">
                   24/7 customer support for a smooth and worry-free travel
                   experience.
                 </span>
               </div>
-              <div className="p-[10px] flex items-center gap-[10px]">
+              <div className="py-[5px] px-[10px] md:p-[10px] flex items-center gap-[10px]">
                 <span className="text-khaki">
                   <FontAwesomeIcon
                     icon={faPlus}
@@ -171,12 +173,14 @@ export default function Content() {
                     height={18}
                   />
                 </span>
-                <span className="text-gray">d</span>
+                <span className="text-gray font-inter text-sm sm:text-[16px] sm:leading-[24px] font-normal">
+                  d
+                </span>
               </div>
             </div>
             <Link href="/plantrip" className={` ${pathname === "/plantrip"}`}>
               <button className="text-[#fff] flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
-                <span className="font-lato text-[20px] font-bold leading-normal">
+                <span className="font-lato text-[16px] sm:text-[20px] font-bold leading-normal">
                   Plan your trip
                 </span>
                 <span>
@@ -227,7 +231,9 @@ export default function Content() {
                     <div className="font-inter text-sm leading-[24px] font-[450] text-[#8D8D8D]">
                       <span>3 days • 2 week</span>
                     </div>
-                    <p className="font-inter text-sm lg:text-[16px] font-medium lg:leading-[24px] text-[#424242]">132 Alston Ave, Durham, NC 27885 </p>
+                    <p className="font-inter text-sm lg:text-[16px] font-medium lg:leading-[24px] text-[#424242]">
+                      132 Alston Ave, Durham, NC 27885{" "}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -243,9 +249,12 @@ export default function Content() {
           </div>
         </div>
       </div>
-
-      <ExploreMalysia/>
-      <ExperienceSpeaks/>
+      <div className="px-8 ">
+        <ExploreMalysia />
+      </div>
+      <div className="px-8 ">
+        <ExperienceSpeaks />
+      </div>
     </div>
   );
 }
