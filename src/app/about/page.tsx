@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from './Hero'
+import Content from './Content'
 
 export default function page() {
   return (
-    <div className='min-h-screen'>
-      About Us page
+    <div className='w-full h-full'>
+      <Hero/>
+      <Content/>
     </div>
   )
 }

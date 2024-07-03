@@ -23,7 +23,7 @@ export default function Content() {
                 journeys that cater to your unique preferences and values.{" "}
               </p>
               <Link href="/about" className={` ${pathname === "/about"}`}>
-                <button className="flex items-center justify-center gap-[10px] py-3 px-[22px] bg-[#C3A870] transition-none">
+                <button className="flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
                   <span className="text-[#fff] font-lato text-[20px] font-bold leading-normal">
                     About us
                   </span>
@@ -41,7 +41,7 @@ export default function Content() {
           </div>
         </div>
 
-        {/* <div className="3xl:container 3xl:max-w-[1500px] 3xl:mx-auto pl-20 pt-48 pb-24">
+        <div className="3xl:container 3xl:max-w-[1500px] 3xl:mx-auto pl-20 pt-48 pb-24">
           <span className="relative">
             <SvgImage
               src="/home-halal-travel.svg"
@@ -57,17 +57,17 @@ export default function Content() {
             />
             <div className="bg-[#fff] w-[640px] h-[400px] flex flex-col justify-center items-start gap-[44px] py-[45px] px-[35px] absolute z-20 bottom-[70px] right-[-70px]">
               <div className="flex flex-col gap-[42px] items-start">
-                <div className="text-[#0E3242] font-playfair-display text-[48px] font-bold leading-[62px] capitalize">
+                <div className="text-oceanBlue font-playfair-display text-[48px] font-bold leading-[62px] capitalize">
                   Experience Halal Travel Like Never Before
                 </div>
-                <p className="text-[#4F5557] font-lato text-[18px] font-normal leading-[28px] capitalize">
+                <p className="text-darygray font-lato text-[18px] font-normal leading-[28px] capitalize">
                   We are pioneers in the halal travel industry, dedicated to
                   providing exceptional, culturally rich travel experiences that
                   adhere to halal standards.
                 </p>
               </div>
               <Link href="/about" className={` ${pathname === "/about"}`}>
-                <button className="flex items-center justify-center gap-[10px] py-3 px-[22px] bg-[#C3A870] transition-none">
+                <button className="flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
                   <span className="text-[#fff] font-lato text-[20px] font-bold leading-normal">
                     About us
                   </span>
@@ -80,10 +80,10 @@ export default function Content() {
               </span>
             </div>
           </span>
-        </div> */}
+        </div>
       </div>
 
-      {/* <div className="py-48">
+      <div className="py-48">
         <div className="relative">
           <SvgImage
             src="/malysia.svg"
@@ -102,14 +102,14 @@ export default function Content() {
               <div className="text-[#091E31] font-playfair-display text-[48px] font-bold leading-[62px] capitalize">
                 Explore the beauty of Malaysia
               </div>
-              <p className="text-[#4F5557] font-lato text-[18px] font-normal leading-[28px] capitalize">
+              <p className="text-darygray font-lato text-[18px] font-normal leading-[28px] capitalize">
                 We are pioneers in the halal travel industry, dedicated to
                 providing exceptional, culturally rich travel experiences that
                 adhere to halal standards.
               </p>
             </div>
             <Link href="/about" className={` ${pathname === "/about"}`}>
-              <button className="text-[#fff] flex items-center justify-center gap-[10px] py-3 px-[22px] bg-[#C3A870] transition-none">
+              <button className="text-[#fff] flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
                 <span className="font-lato text-[20px] font-bold leading-normal">
                   Explore
                 </span>
@@ -120,24 +120,24 @@ export default function Content() {
             </Link>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="p-8 md:px-16 md:py-20 lg:px-28 lg:py-28">
         <div className="3xl:container 3xl:max-w-[1500px] 3xl:mx-auto flex flex-col gap-4 items-center md:flex-row md:items-end md:justify-between">
           <div className="basis-[47.7%] flex flex-col gap-[38px] items-start">
             <div className="flex flex-col gap-[19px] items-start">
-              <div className="text-[#0E3242] font-playfair-display text-[30px] md:text-[38px] lg:text-[48px] font-extrabold leading-[40px] md:leading-[50px] lg:leading-[62px] capitalize">
+              <div className="text-oceanBlue font-playfair-display text-[30px] md:text-[38px] lg:text-[48px] font-extrabold leading-[40px] md:leading-[50px] lg:leading-[62px] capitalize">
                 plan your trip
               </div>
-              <p className="text-[#777] font-lato text-[18px] font-normal leading-[28px]">
+              <p className="text-darygray font-lato text-[16px] font-normal leading-[24px] capitalize">
                 We are pioneers in the halal travel industry, dedicated to
                 providing exceptional, culturally rich travel experiences that
-                adhere to halal standards.{" "}
+                adhere to halal standards.
               </p>
             </div>
             <div className="flex flex-col gap-1 items-start">
               <div className="p-[10px] flex items-center gap-[10px]">
-                <span className="text-[#C3A870]">
+                <span className="text-khaki">
                   <FontAwesomeIcon
                     icon={faPlus}
                     fill=""
@@ -145,10 +145,10 @@ export default function Content() {
                     height={18}
                   />
                 </span>
-                <span>Access to exclusive deals on flights and hotels.</span>
+                <span className="text-gray">Access to exclusive deals on flights and hotels.</span>
               </div>
               <div className="p-[10px] flex items-center gap-[10px]">
-                <span className="text-[#C3A870]">
+                <span className="text-khaki">
                   <FontAwesomeIcon
                     icon={faPlus}
                     fill=""
@@ -156,13 +156,13 @@ export default function Content() {
                     height={18}
                   />
                 </span>
-                <span>
+                <span className="text-gray">
                   24/7 customer support for a smooth and worry-free travel
                   experience.
                 </span>
               </div>
               <div className="p-[10px] flex items-center gap-[10px]">
-                <span className="text-[#C3A870]">
+                <span className="text-khaki">
                   <FontAwesomeIcon
                     icon={faPlus}
                     fill=""
@@ -170,11 +170,11 @@ export default function Content() {
                     height={18}
                   />
                 </span>
-                <span>d</span>
+                <span className="text-gray">d</span>
               </div>
             </div>
             <Link href="/plantrip" className={` ${pathname === "/plantrip"}`}>
-              <button className="text-[#fff] flex items-center justify-center gap-[10px] py-3 px-[22px] bg-[#C3A870] transition-none">
+              <button className="text-[#fff] flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
                 <span className="font-lato text-[20px] font-bold leading-normal">
                   Plan your trip
                 </span>
@@ -207,7 +207,7 @@ export default function Content() {
                     href="/tracktrip"
                     className={`basis-[46%] ${pathname === "/tracktrip"}`}
                   >
-                    <button className="w-full flex flex-col justify-center items-center gap-[10.526px] px-2 py-[7px] lg:px-[21.053px] lg:py-[10.526px] border-[1px] border-[#506873] text-[#4F5557] hover:bg-oceanBlue hover:text-white transition-none">
+                    <button className="w-full flex flex-col justify-center items-center gap-[10.526px] px-2 py-[7px] lg:px-[21.053px] lg:py-[10.526px] border-[1px] border-[#506873] text-darygray hover:bg-oceanBlue hover:text-white transition-none">
                       <span className="font-lato text-sm md:text-[16.842px] font-bold md:leading-[25.263px] text-center">
                         Track trip
                       </span>
