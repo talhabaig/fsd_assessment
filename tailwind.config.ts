@@ -32,6 +32,11 @@ const config: Config = {
         gray: "#777",
         khaki: "#C3A870",
         darygray: "#4F5557",
+        royalblue:'#055EA0',
+        bluegray:'#A1B1B8',
+        softwhite:'#EFEAE3',
+        reddishbrown:'#955C31',
+        brownishgray:'#A89881',
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
