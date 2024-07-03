@@ -2,7 +2,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SvgImage from "../components/SvgImage";
-
+import {
+  faLocationDot,
+  faPhone,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export function Footer() {
   const handleSimpleLinkClick = (path: string) => {
     setTimeout(() => {
@@ -22,7 +27,7 @@ export function Footer() {
                 <SvgImage
                   src="/footer-logo.svg"
                   alt="Logo"
-                  className="w-[190px] xs:w-[200px] lg:w-auto"
+                  className="w-[190px] xs:w-[200px] lg:w-auto" width=""
                 />
               </Link>
             </div>
@@ -81,8 +86,16 @@ export function Footer() {
                     Contact Us
                   </div>
                   <div className="text-silverGray font-lato text-sm leading-[22.4px] font-normal">
-                    <div>+1 (999) 888-77-66</div>
-                    <div>
+                    <div className="flex gap-2">
+                      <span className="cursor-pointer">
+                        <FontAwesomeIcon icon={faPhone} />
+                      </span>
+                      <span className="cursor-pointer">+1 (999) 888-77-66</span>
+                    </div>
+                    <div className="flex gap-2">
+                      <span className="cursor-pointer">
+                        <FontAwesomeIcon icon={faEnvelope} />
+                      </span>
                       <a href="mailto:hello@luxeclub.com" target="_blank">
                         hello@luxeclub.com
                       </a>
@@ -93,8 +106,18 @@ export function Footer() {
                   <div className="text-#fff font-lato text-[20px] font-medium leading-[22px] tracking-[-0.2px]">
                     Location
                   </div>
-                  <div className="text-silverGray font-lato text-sm leading-[22.4px] font-normal">
-                    <div>483920, Moscow, Myasnitskaya 22/2/5, Office 4</div>
+                  <div className="text-silverGray font-lato text-sm leading-[22.4px] font-normal flex gap-2">
+                    <span className="cursor-pointer">
+                      <FontAwesomeIcon icon={faLocationDot} />
+                    </span>
+                    <span className="cursor-pointer">
+                      <a
+                        href="/"
+                        target="_blank"
+                      >
+                        483920, Moscow, Myasnitskaya 22/2/5, Office 4
+                      </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -112,7 +135,7 @@ export function Footer() {
                       <SvgImage
                         src="/icons/twitter-icon.png"
                         alt="Logo"
-                        className="cursor-pointer"
+                        className="cursor-pointer" width=""
                       />
                     </a>
                     <a
@@ -123,7 +146,7 @@ export function Footer() {
                       <SvgImage
                         src="/icons/facebook-icon.png"
                         alt="Logo"
-                        className="cursor-pointer"
+                        className="cursor-pointer" width=""
                       />
                     </a>
                     <a
@@ -134,7 +157,7 @@ export function Footer() {
                       <SvgImage
                         src="/icons/insta-icon.png"
                         alt="Logo"
-                        className="cursor-pointer"
+                        className="cursor-pointer" width=""
                       />
                     </a>
                   </div>

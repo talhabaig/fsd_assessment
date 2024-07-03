@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
+import "./main.css";
 import styles from "./layout.module.css";
 import {Nav} from "../components/Nav";
 import {Footer} from "../components/Footer";
