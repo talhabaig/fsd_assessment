@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { faArrowRight, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ExploreMalysia from "./ExploreMalysia";
 export default function Content() {
   const pathname = usePathname();
   return (
@@ -121,11 +122,11 @@ export default function Content() {
         </div>
       </div>
 
-      <div className="px-28 py-28">
-        <div className="3xl:container 3xl:max-w-[1500px] 3xl:mx-auto flex items-end justify-between">
+      <div className="p-8 md:px-16 md:py-20 lg:px-28 lg:py-28">
+        <div className="3xl:container 3xl:max-w-[1500px] 3xl:mx-auto flex flex-col gap-4 items-center md:flex-row md:items-end md:justify-between">
           <div className="basis-[47.7%] flex flex-col gap-[38px] items-start">
             <div className="flex flex-col gap-[19px] items-start">
-              <div className="text-oceanBlue font-playfair-display text-[48px] font-extrabold leading-[62px] capitalize">
+              <div className="text-oceanBlue font-playfair-display text-[30px] md:text-[38px] lg:text-[48px] font-extrabold leading-[40px] md:leading-[50px] lg:leading-[62px] capitalize">
                 plan your trip
               </div>
               <p className="text-darygray font-lato text-[16px] font-normal leading-[24px] capitalize">
@@ -188,26 +189,26 @@ export default function Content() {
               </button>
             </Link>
           </div>
-          <div className="pt-8 basis-[42.5%] bg-[#E9DED6]">
+          <div className="pt-4 lg:pt-8 basis-[42.5%] md:basis-[47%] lg:basis-[42.5%] bg-[#E9DED6]">
             <div className="flex items-center justify-center gap-[99px]">
-              <div className="basis-[64%] flex flex-col gap-2">
-                <div className="bg-white flex justify-center items-center shrink-0 px-3 py-3 gap-3">
+              <div className="basis-[85%] lg:basis-[64%] flex flex-col gap-2">
+                <div className="bg-white flex justify-center items-center shrink-0 px-2 lg:px-3 py-3 gap-1 md:gap-2 lg:gap-3">
                   <Link
                     href="/plantrip"
-                    className={` ${pathname === "/plantrip"}`}
+                    className={`basis-[52%] ${pathname === "/plantrip"}`}
                   >
-                    <button className="text-[#fff] flex flex-col px-[21.053px] py-[10.526px] items-start gap-[12px] bg-oceanBlue transition-none text-[16.842px]">
-                      <span className="text-[#fff] font-lato font-medium leading-[25.263px]">
+                    <button className="w-full text-[#fff] flex flex-col p-2 lg:px-[21.053px] lg:py-[10.526px] items-center gap-[12px] bg-oceanBlue transition-none text-sm md:text-[16.842px]">
+                      <span className="text-[#fff] font-lato font-medium md:leading-[25.263px]">
                         Plan your trip
                       </span>
                     </button>
                   </Link>
                   <Link
                     href="/tracktrip"
-                    className={` ${pathname === "/tracktrip"}`}
+                    className={`basis-[46%] ${pathname === "/tracktrip"}`}
                   >
-                    <button className="flex flex-col justify-center items-center gap-[10.526px] px-[21.053px] py-[10.526px] border-[1px] border-[#506873] text-darygray hover:bg-oceanBlue hover:text-white transition-none">
-                      <span className="font-lato text-[16.842px] font-bold leading-[25.263px] text-center">
+                    <button className="w-full flex flex-col justify-center items-center gap-[10.526px] px-2 py-[7px] lg:px-[21.053px] lg:py-[10.526px] border-[1px] border-[#506873] text-darygray hover:bg-oceanBlue hover:text-white transition-none">
+                      <span className="font-lato text-sm md:text-[16.842px] font-bold md:leading-[25.263px] text-center">
                         Track trip
                       </span>
                     </button>
@@ -215,9 +216,9 @@ export default function Content() {
                 </div>
 
                 <div className="flex flex-col">
-                  <div className="w-full h-[177.612px] bg-cover bg-[url('/plan-trip-card-img.png')] bg-no-repeat"></div>
-                  <div className="h-[155.8px] py-5 px-4 bg-white rounded-[0px_0px_7px_7px]">
-                    <div className="mb-4">
+                  <div className="w-full h-[160px] xs:h-[177.612px] bg-cover bg-[url('/plan-trip-card-img.png')] bg-no-repeat"></div>
+                  <div className="h-[155.8px] py-4 px-3 md:py-5 md:px-4 bg-white rounded-[0px_0px_7px_7px]">
+                    <div className="mb-2 lg:mb-4">
                       <span className="bg-[#D4D4D8] py-[5px] px-[10px] font-inter text-sm font-semibold text-[#1E1E1E]">
                         $1,250,000
                       </span>
@@ -225,7 +226,7 @@ export default function Content() {
                     <div className="font-inter text-sm leading-[24px] font-[450] text-[#8D8D8D]">
                       <span>3 days • 2 week</span>
                     </div>
-                    <p className="font-inter text-[16px] font-medium leading-[24px] text-[#424242]">132 Alston Ave, Durham, NC 27885 </p>
+                    <p className="font-inter text-sm lg:text-[16px] font-medium lg:leading-[24px] text-[#424242]">132 Alston Ave, Durham, NC 27885 </p>
                   </div>
                 </div>
               </div>
@@ -241,6 +242,8 @@ export default function Content() {
           </div>
         </div>
       </div>
+
+      <ExploreMalysia/>
     </div>
   );
 }
