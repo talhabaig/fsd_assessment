@@ -1,10 +1,7 @@
 "use client";
 import React from "react";
-import SvgImage from "../../components/SvgImage";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { faArrowRight, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Content() {
   const pathname = usePathname();
   return (
