@@ -47,7 +47,7 @@ export const Nav = () => {
       <div className="h-full flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/">
-            <SvgImage src="/logo.svg" alt="Logo" className="w-[190px] xs:w-[200px] lg:w-auto"/>
+            <SvgImage src="/logo.svg" alt="Logo" width="" className="w-[190px] xs:w-[200px] lg:w-auto"/>
           </Link>
         </div>
         <div className="md:hidden">
@@ -78,7 +78,7 @@ export const Nav = () => {
                 onClick={handleClose}
                 className={`nav-link ${styles.link} ${
                   pathname === "/tracktrip" ? `${styles.active} active` : ""
-                } text-oceanBlue md:px-[15px] md:py-[14px] font-lato font-bold md:text-sm lg:text-[16px] leading-normal`}
+                } text-oceanBlue md:px-[15px] md:py-[14px] font-lato text-lg font-bold md:text-sm lg:text-[16px] md:leading-normal`}
               >
                 Track Trip
               </div>
@@ -88,7 +88,7 @@ export const Nav = () => {
                 onClick={handleClose}
                 className={`nav-link ${styles.link} ${
                   pathname === "/plantrip" ? `${styles.active} active` : ""
-                } text-oceanBlue md:px-[15px] md:py-[14px] font-lato font-bold md:text-sm lg:text-[16px] leading-normal`}
+                } text-oceanBlue md:px-[15px] md:py-[14px] font-lato font-bold text-lg md:text-sm lg:text-[16px] md:leading-normal`}
               >
                 Plan Trip
               </div>
@@ -98,7 +98,7 @@ export const Nav = () => {
                 onClick={handleClose}
                 className={`nav-link ${styles.link} ${
                   pathname === "/about" ? `${styles.active} active` : ""
-                } text-oceanBlue md:px-[15px] md:py-[14px] font-lato font-bold md:text-sm lg:text-[16px] leading-normal`}
+                } text-oceanBlue md:px-[15px] md:py-[14px] font-lato font-bold text-lg md:text-sm lg:text-[16px] md:leading-normal`}
               >
                 About Us
               </div>
