@@ -18,7 +18,7 @@ export function Footer() {
   const pathname = usePathname();
 
   return (
-    <div className="w-full bg-midnightBlue text-white ">
+    <div className="w-full bg-oceanBlue text-white ">
       <div className="py-12 px-6 lg:p-16 2xl:py-16 2xl:pl-16 2xl:pr-28">
         <div className="flex flex-col gap-8 md:gap-12 lg:gap-16 xl:gap-24">
           <div className="flex flex-col gap-4 md:gap-0 md:flex-row md:justify-between">

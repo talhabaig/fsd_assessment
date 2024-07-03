@@ -27,6 +27,11 @@ const config: Config = {
         softBeige: "#F3EBE5",
         slateBlue: "#467587",
         goldenBrown: "#976935",
+        desertsand: "#977D61",
+        charcoalblack: "#292522",
+        gray: "#777",
+        khaki: "#C3A870",
+        darygray: "#4F5557",
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
