@@ -21,10 +21,14 @@ const config: Config = {
       colors: {
         oceanBlue: '#0E3242',
         goldenSun: '#DFA42E',
-        midnightBlue: '#0E3242',
         silverGray: '#8A9FA9',
         skyBlue: '#6AB5D1',
         softBeige: '#F3EBE5',
+        desertsand:'#977D61',
+        charcoalblack:'#292522',
+        gray:'#777',
+        khaki:'#C3A870',
+        darygray:'#4F5557',
       },
       fontFamily: {
         lato: ['Lato', 'sans-serif'],

@@ -22,7 +22,7 @@ export default function Content() {
                 journeys that cater to your unique preferences and values.{" "}
               </p>
               <Link href="/about" className={` ${pathname === "/about"}`}>
-                <button className="flex items-center justify-center gap-[10px] py-3 px-[22px] bg-[#C3A870] transition-none">
+                <button className="flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
                   <span className="text-[#fff] font-lato text-[20px] font-bold leading-normal">
                     About us
                   </span>
@@ -56,17 +56,17 @@ export default function Content() {
             />
             <div className="bg-[#fff] w-[640px] h-[400px] flex flex-col justify-center items-start gap-[44px] py-[45px] px-[35px] absolute z-20 bottom-[70px] right-[-70px]">
               <div className="flex flex-col gap-[42px] items-start">
-                <div className="text-[#0E3242] font-playfair-display text-[48px] font-bold leading-[62px] capitalize">
+                <div className="text-oceanBlue font-playfair-display text-[48px] font-bold leading-[62px] capitalize">
                   Experience Halal Travel Like Never Before
                 </div>
-                <p className="text-[#4F5557] font-lato text-[18px] font-normal leading-[28px] capitalize">
+                <p className="text-darygray font-lato text-[18px] font-normal leading-[28px] capitalize">
                   We are pioneers in the halal travel industry, dedicated to
                   providing exceptional, culturally rich travel experiences that
                   adhere to halal standards.
                 </p>
               </div>
               <Link href="/about" className={` ${pathname === "/about"}`}>
-                <button className="flex items-center justify-center gap-[10px] py-3 px-[22px] bg-[#C3A870] transition-none">
+                <button className="flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
                   <span className="text-[#fff] font-lato text-[20px] font-bold leading-normal">
                     About us
                   </span>
@@ -101,14 +101,14 @@ export default function Content() {
               <div className="text-[#091E31] font-playfair-display text-[48px] font-bold leading-[62px] capitalize">
                 Explore the beauty of Malaysia
               </div>
-              <p className="text-[#4F5557] font-lato text-[18px] font-normal leading-[28px] capitalize">
+              <p className="text-darygray font-lato text-[18px] font-normal leading-[28px] capitalize">
                 We are pioneers in the halal travel industry, dedicated to
                 providing exceptional, culturally rich travel experiences that
                 adhere to halal standards.
               </p>
             </div>
             <Link href="/about" className={` ${pathname === "/about"}`}>
-              <button className="text-[#fff] flex items-center justify-center gap-[10px] py-3 px-[22px] bg-[#C3A870] transition-none">
+              <button className="text-[#fff] flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
                 <span className="font-lato text-[20px] font-bold leading-normal">
                   Explore
                 </span>
@@ -125,18 +125,18 @@ export default function Content() {
         <div className="3xl:container 3xl:max-w-[1500px] 3xl:mx-auto flex items-end justify-between">
           <div className="basis-[47.7%] flex flex-col gap-[38px] items-start">
             <div className="flex flex-col gap-[19px] items-start">
-              <div className="text-[#0E3242] font-playfair-display text-[48px] font-extrabold leading-[62px] capitalize">
+              <div className="text-oceanBlue font-playfair-display text-[48px] font-extrabold leading-[62px] capitalize">
                 plan your trip
               </div>
-              <p className="text-[#777] font-lato text-[18px] font-normal leading-[28px]">
+              <p className="text-darygray font-lato text-[16px] font-normal leading-[24px] capitalize">
                 We are pioneers in the halal travel industry, dedicated to
                 providing exceptional, culturally rich travel experiences that
-                adhere to halal standards.{" "}
+                adhere to halal standards.
               </p>
             </div>
             <div className="flex flex-col gap-1 items-start">
               <div className="p-[10px] flex items-center gap-[10px]">
-                <span className="text-[#C3A870]">
+                <span className="text-khaki">
                   <FontAwesomeIcon
                     icon={faPlus}
                     fill=""
@@ -144,10 +144,10 @@ export default function Content() {
                     height={18}
                   />
                 </span>
-                <span>Access to exclusive deals on flights and hotels.</span>
+                <span className="text-gray">Access to exclusive deals on flights and hotels.</span>
               </div>
               <div className="p-[10px] flex items-center gap-[10px]">
-                <span className="text-[#C3A870]">
+                <span className="text-khaki">
                   <FontAwesomeIcon
                     icon={faPlus}
                     fill=""
@@ -155,13 +155,13 @@ export default function Content() {
                     height={18}
                   />
                 </span>
-                <span>
+                <span className="text-gray">
                   24/7 customer support for a smooth and worry-free travel
                   experience.
                 </span>
               </div>
               <div className="p-[10px] flex items-center gap-[10px]">
-                <span className="text-[#C3A870]">
+                <span className="text-khaki">
                   <FontAwesomeIcon
                     icon={faPlus}
                     fill=""
@@ -169,11 +169,11 @@ export default function Content() {
                     height={18}
                   />
                 </span>
-                <span>d</span>
+                <span className="text-gray">d</span>
               </div>
             </div>
             <Link href="/plantrip" className={` ${pathname === "/plantrip"}`}>
-              <button className="text-[#fff] flex items-center justify-center gap-[10px] py-3 px-[22px] bg-[#C3A870] transition-none">
+              <button className="text-[#fff] flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
                 <span className="font-lato text-[20px] font-bold leading-normal">
                   Plan your trip
                 </span>
@@ -206,7 +206,7 @@ export default function Content() {
                     href="/tracktrip"
                     className={` ${pathname === "/tracktrip"}`}
                   >
-                    <button className="flex flex-col justify-center items-center gap-[10.526px] px-[21.053px] py-[10.526px] border-[1px] border-[#506873] text-[#4F5557] hover:bg-oceanBlue hover:text-white transition-none">
+                    <button className="flex flex-col justify-center items-center gap-[10.526px] px-[21.053px] py-[10.526px] border-[1px] border-[#506873] text-darygray hover:bg-oceanBlue hover:text-white transition-none">
                       <span className="font-lato text-[16.842px] font-bold leading-[25.263px] text-center">
                         Track trip
                       </span>
