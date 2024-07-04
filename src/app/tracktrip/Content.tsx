@@ -5,7 +5,7 @@ import React from "react";
 
 function Content() {
 
-  return (
+  return (<>
     <div className="mt-8 flex flex-col justify-center items-center">
       <div className="text-[20px]  font-bold text-oceanBlue px-4">
         Booking details for booking ID{" "}
@@ -108,7 +108,13 @@ function Content() {
         
       </div>
 
+      
+
     </div>
+    <div className="mt-[15rem]">
+    <img src="/sand.png" alt="" className="w-full h-auto cover" />
+  </div>
+  </>
   );
 }
 
