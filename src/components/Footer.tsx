@@ -27,7 +27,8 @@ export function Footer() {
                 <SvgImage
                   src="/footer-logo.svg"
                   alt="Logo"
-                  className="w-[190px] xs:w-[200px] lg:w-auto" width=""
+                  className="w-[190px] xs:w-[200px] lg:w-auto"
+                  width=""
                 />
               </Link>
             </div>
@@ -112,7 +113,7 @@ export function Footer() {
                     </span>
                     <span className="cursor-pointer">
                       <a
-                        href="/"
+                        href="https://goo.gl/maps/6x5jkDZgode7pP4v6"
                         target="_blank"
                       >
                         483920, Moscow, Myasnitskaya 22/2/5, Office 4
@@ -135,7 +136,8 @@ export function Footer() {
                       <SvgImage
                         src="/icons/twitter-icon.png"
                         alt="Logo"
-                        className="cursor-pointer" width=""
+                        className="cursor-pointer"
+                        width=""
                       />
                     </a>
                     <a
@@ -146,7 +148,8 @@ export function Footer() {
                       <SvgImage
                         src="/icons/facebook-icon.png"
                         alt="Logo"
-                        className="cursor-pointer" width=""
+                        className="cursor-pointer"
+                        width=""
                       />
                     </a>
                     <a
@@ -157,7 +160,8 @@ export function Footer() {
                       <SvgImage
                         src="/icons/insta-icon.png"
                         alt="Logo"
-                        className="cursor-pointer" width=""
+                        className="cursor-pointer"
+                        width=""
                       />
                     </a>
                   </div>
