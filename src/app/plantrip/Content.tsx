@@ -1,0 +1,106 @@
+import SvgImage from "@/components/SvgImage";
+import React from "react";
+import ExperienceSpeaks from "../home/ExperienceSpeaks";
+
+const destinations = [
+  {
+    id: 1,
+    src: "/explore-USA.png",
+    alt: "explore malysia",
+    title: "Visit United States",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus massa dignissim tempus.",
+  },
+  {
+    id: 2,
+    src: "/explore-indonesia.png",
+    alt: "explore malysia",
+    title: "Visit Indonesia",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus massa dignissim tempus.",
+  },
+  {
+    id: 3,
+    src: "/explore-malysia3.png",
+    alt: "explore malysia",
+    title: "Visit Indonesia",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus massa dignissim tempus.",
+  },
+  {
+    id: 4,
+    src: "/explore-turkey.png",
+    alt: "explore malysia",
+    title: "Visit United States",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus massa dignissim tempus.",
+  },
+];
+
+export default function Content() {
+  return (
+    <div>
+      <div className="flex items-center justify-around gap-[25rem] xs:gap-[30px] lg:gap-[22rem] xl:gap-[28rem]">
+        <div className="text-[48px] font-bold capitalize text-[#452C1A] w-[40rem] xs:w-[15rem] xs:text-[20px] lg:text-[30px] lg:w-[22rem] xl:text-[48px] xl:w-[36rem] ">
+          Experience Halal Travel Like Never Before
+        </div>
+        <button className="text-khaki text-[20px] font-semibold px-[22px] py-[14px] border-2 border-[reddishbrown] xs:px-[10px] xs:py-[10px] xs:text-[10px] xl:text-[20px] xl:py-[14px] lg:px-[22px]">
+          Explore more
+        </button>
+      </div>
+      <div className="flex flex-col md:flex-row flex-wrap md:justify-between md:items-start gap-[22px] lg:gap-[34px] pt-[4rem] px-[6rem] xl:px-[10rem]">
+        {destinations.map((destination) => (
+          <div
+            key={destination.id}
+            className="basis-[80%] md:basis-[47.8%] rounded-[6px] bg-darkslateblue relative"
+          >
+            <SvgImage
+              src={destination.src}
+              alt={destination.alt}
+              className=""
+              width="100%"
+            />
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-eerieblack to-[rgba(255, 255, 255, 0)] to-[50%]" />
+            <div className="absolute bottom-5 lg:bottom-[35px] xl:bottom-[50px] 2xl:bottom-[99.62px] left-0 w-full bg-transparent bg-opacity-50 px-4 md:px-6 lg:px-10">
+              <div className="font-bold font-lato text-[18px] md:text-[22px] leading-[22px] lg:text-[32px] md:leading-[32px] lg:leading-[42px] text-white mb-4">
+                {destination.title}
+              </div>
+              <div className="text-sm lg:text-[16px] font-normal leading-[20px] lg:leading-[26px] text-white font-lato">
+                {destination.description}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="mt-[4rem] 3xl:flex 3xl:justify-end 3xl:mt-[8rem] ">
+        <div className="xs:px-[3rem] xs:absolute md:absolute md:pl-[12rem] md:pr-[6rem] xl:pl-[20rem] 2xl:pl-[35rem] 3xl:pl-[0] 3xl:pr-[10rem]">
+          <SvgImage
+            src="/sascha-bosshard.png"
+            alt="sascha"
+            className=""
+            width="100%"
+          />
+        </div>
+
+        <div className="flex bg-white xs:px-[8px] xs:py-[10px]  xs:w-[15rem] xs:relative xs:top-[3rem] xs:left-[1rem] md:w-[20rem] md:px-[40px] md:top-[5rem] md:left-[5rem] lg:w-[26rem] xl:w-[38rem] xl:top-[2rem] 2xl:left-[15rem] 2xl:w-[40rem] 2xl:py-[18px] 3xl:left-[-43rem]">
+          <div className="flex flex-col gap-6 xs:gap-2 md:gap-3 lg:gap-4">
+            <div className="text-[48px] font-bold capitalize text-[#452C1A] w-[40rem] xs:w-[15rem] xs:text-[16px] lg:text-[30px] lg:w-[22rem] xl:text-[48px] xl:w-[36rem] ">
+              Experience Halal Travel Like Never Before
+            </div>
+            <div className="text-[20px] font-normal text-darygray capitalize xs:text-[12px] xs:w-[14rem] lg:text-[18px] lg:w-[20rem] xl:text-[28px] xl:w-[33rem]">
+              We are pioneers in the halal travel industry, dedicated to
+              providing exceptional, culturally rich travel experiences that
+              adhere to halal standards.
+            </div>
+            <button className="bg-khaki px-[10px] py-[10px] w-[6rem] xs:px-[0] xs:text-[15px] xs:w-[5rem] xs:py-[5px] lg:text-[18px] lg:px-[12px] lg:py-[8px] lg:w-[7rem] xl:text-[24px] xl:px-[18px] xl:py-[12px] xl:w-[10rem]">
+              About us
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="px-8 xs:mt-[5rem] md:mt-[10rem] lg:mt-[15rem] xl:mt-[7rem] 2xl:mt-[6rem]">
+        <ExperienceSpeaks />
+      </div>
+    </div>
+  );
+}
