@@ -82,7 +82,7 @@ export function Footer() {
             <div className="md:basis-full 2xl:basis-[64%] 3xl:basis-[66%] flex flex-col gap-8 md:gap-4 lg:gap-12 md:flex-row lg:justify-between">
               <div className="md:basis-[65%] xl:basis-[55%] 2xl:basis-[65%] flex flex-col md:flex-row gap-8 md:justify-center lg:justify-between xl:justify-start lg:gap-[48px] items-start">
                 <div className="md:basis-[40%] lg:basis-[35%] xl:basis-[35%] 2xl:basis-[30%] flex flex-col gap-4">
-                  <div className="text-#fff font-lato text-[20px] font-medium leading-[22px] tracking-[-0.2px]">
+                  <div className="text-white font-lato text-[20px] font-medium leading-[22px] tracking-[-0.2px]">
                     Contact Us
                   </div>
                   <div className="text-silverGray font-lato text-sm leading-[22.4px] font-normal">
@@ -103,7 +103,7 @@ export function Footer() {
                   </div>
                 </div>
                 <div className="md:basis-[50%] lg:basis-[55%] xl:basis-[40%] 2xl:basis-[42%] flex flex-col gap-4">
-                  <div className="text-#fff font-lato text-[20px] font-medium leading-[22px] tracking-[-0.2px]">
+                  <div className="text-white font-lato text-[20px] font-medium leading-[22px] tracking-[-0.2px]">
                     Location
                   </div>
                   <div className="text-silverGray font-lato text-sm leading-[22.4px] font-normal flex gap-2">
@@ -123,7 +123,7 @@ export function Footer() {
               </div>
               <div className="md:basis-[32%] lg:basis-1/3 xl:basis-[40%] 2xl:basis-1/3 2xl:flex 2xl:justify-end">
                 <div className="flex flex-col gap-4 items-start">
-                  <div className="text-#fff font-lato text-[12px] font-normal leading-[16.8px] tracking-[-0.2px]">
+                  <div className="text-white font-lato text-[12px] font-normal leading-[16.8px] tracking-[-0.2px]">
                     Follow Us
                   </div>
                   <div className="flex gap-2 md:gap-4">
@@ -167,16 +167,16 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <hr className="bg-[#2D576D] h-[2px]" />
+      <hr className="bg-tealblue h-[2px]" />
       <div className="py-4 px-6 lg:py-8 lg:px-16 2xl:py-8 2xl:pl-16 2xl:pr-28 flex flex-col md:flex-row md:justify-between">
         <div className=" text-center">
-          <span className="text-[12px] sm:text-sm font-normal leading-[14px] sm:leading-[26px] font-lato text-[#EDF5F5] opacity-[0.7]">
+          <span className="text-[12px] sm:text-sm font-normal leading-[14px] sm:leading-[26px] font-lato text-azuremist opacity-[0.7]">
             Design by Mohitrana{" "}
             <span className="text-skyBlue underline">(Behance)</span>{" "}
           </span>
         </div>
         <div className=" text-center">
-          <span className="text-[#EDF5F5] text-[12px] sm:text-sm font-normal leading-[12px] sm:leading-[26px] opacity-[0.7] font-Manrope">
+          <span className="text-azuremist text-[12px] sm:text-sm font-normal leading-[12px] sm:leading-[26px] opacity-[0.7] font-Manrope">
             © Copyright 2021- 2023, All Rights Reserved by luxe club
           </span>
         </div>
