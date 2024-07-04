@@ -1,6 +1,49 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import axios from "axios";
 
-export default function Content() {
+interface ContentProps {
+  setSubmitted: (submitted: boolean) => void;
+}
+
+export default function Content({ setSubmitted }: ContentProps) {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phoneNo: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}contact-us`,
+        formData
+      );
+      console.log("Response:", response.data);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        phoneNo: "",
+        email: "",
+        message: "",
+      });
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
+  };
+
   return (
     <div className="w-full flex flex-col gap-20 mt-[7.4rem]">
       <div className="flex justify-center items-center mv-">
@@ -24,6 +67,9 @@ export default function Content() {
                       First Name
                     </span>
                     <input
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
                       className="px-[22px] py-[10px]  border-2 self-stretch placeholder-custom"
                       type="text"
                       placeholder="First Name"
@@ -35,6 +81,9 @@ export default function Content() {
                       Last Name
                     </span>
                     <input
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
                       className="px-[22px] py-[10px]  border-2 self-stretch placeholder-custom"
                       type="text"
                       placeholder="Last Name"
@@ -46,6 +95,9 @@ export default function Content() {
                       Phone no.
                     </span>
                     <input
+                      name="phoneNo"
+                      value={formData.phoneNo}
+                      onChange={handleChange}
                       className="px-[22px] py-[10px] border-2 self-stretch placeholder-custom"
                       type="tel"
                       placeholder="+91"
@@ -57,6 +109,9 @@ export default function Content() {
                       Email Address
                     </span>
                     <input
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       className="px-[22px] py-[10px] border-2 self-stretch placeholder-custom"
                       type="text"
                       placeholder="moohitrana@gmail.com"
@@ -68,6 +123,9 @@ export default function Content() {
                     Message{" "}
                   </span>
                   <input
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     className="px-[22px] py-[10px] h-[88px] border-2 self-stretch placeholder-custom"
                     id=""
                     placeholder="Write a note"
@@ -75,6 +133,7 @@ export default function Content() {
                 </div>
               </div>
               <button
+                onClick={handleSubmit}
                 className="px-[22px] py-[10px] text-[16px] font-bold leading-normal text-white bg-oceanBlue  border-2 self-stretch"
                 type="submit"
               >
@@ -85,9 +144,7 @@ export default function Content() {
         </div>
       </div>
 
-      <div>
-     
-      </div>
+      <div></div>
     </div>
   );
 }
