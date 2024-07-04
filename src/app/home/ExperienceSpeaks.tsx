@@ -12,18 +12,18 @@ export default function ExperienceSpeaks() {
         </div>
         <div className="md:py-[25px] xl:px-[30px] flex flex-col items-start gap-[10px]">
           <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-            <div className="bg-[#1F5267] flex justify-between basis-[49.4%]">
+            <div className="bg-darkslateblue flex justify-between basis-[49.4%]">
               <div className="flex flex-col xl:basis-[57.7%] gap-[14px] items-start p-5 md:pt-[39.1px] md:pb-[20.99px] md:pl-[30.1px] xl:pt-[30px] 2xl:pt-[39.1px] xl:pr-0">
-                <div className="font-lato text-sm lg:text-[16px] xl:text-sm 2xl:text-[16px] text-[#fff] font-normal lg:leading-[24px] xl:leading-[20px] 2xl:leading-[24px] capitalize">
+                <div className="font-lato text-sm lg:text-[16px] xl:text-sm 2xl:text-[16px] text-white font-normal lg:leading-[24px] xl:leading-[20px] 2xl:leading-[24px] capitalize">
                   “Rareblocks made it so simple. Our new site is so much
                   beautiful and easier to work with than my old site. I just
                   choose the page, make the change.”
                 </div>
                 <div className="flex flex-col items-start">
-                  <span className="text-[#DFA42E] font-lato text-[16px] md:text-[18px] font-bold leading-[25px] md:leading-[28px]">
+                  <span className="text-goldenSun font-lato text-[16px] md:text-[18px] font-bold leading-[25px] md:leading-[28px]">
                     Cameron Williamson
                   </span>
-                  <span className="text-[#80ABBD] font-lato text-[13px] sm:text-sm leading-normal font-normal">
+                  <span className="text-shadowblue font-lato text-[13px] sm:text-sm leading-normal font-normal">
                     Director of Technology, CreativeGIG
                   </span>
                 </div>
@@ -37,18 +37,18 @@ export default function ExperienceSpeaks() {
                 />
               </div>
             </div>
-            <div className="bg-[#1F5267] flex justify-between basis-[49.4%]">
+            <div className="bg-darkslateblue flex justify-between basis-[49.4%]">
               <div className="flex flex-col xl:basis-[57.7%] gap-[14px] items-start p-5 md:pt-[39.1px] md:pb-[20.99px] md:pl-[30.1px] xl:pt-[30px] 2xl:pt-[39.1px] xl:pr-0">
-                <div className="font-lato text-sm lg:text-[16px] xl:text-sm 2xl:text-[16px] text-[#fff] font-normal lg:leading-[24px] xl:leading-[20px] 2xl:leading-[24px] capitalize">
+                <div className="font-lato text-sm lg:text-[16px] xl:text-sm 2xl:text-[16px] text-whitefont-normal lg:leading-[24px] xl:leading-[20px] 2xl:leading-[24px] capitalize">
                   “Rareblocks made it so simple. Our new site is so much
                   beautiful and easier to work with than my old site. I just
                   choose the page, make the change.”
                 </div>
                 <div className="flex flex-col items-start">
-                  <span className="text-[#DFA42E] font-lato text-[16px] md:text-[18px] font-bold leading-[25px] md:leading-[28px]">
+                  <span className="text-goldenSun font-lato text-[16px] md:text-[18px] font-bold leading-[25px] md:leading-[28px]">
                     Cameron Williamson
                   </span>
-                  <span className="text-[#80ABBD] font-lato text-[13px] sm:text-sm leading-normal font-normal">
+                  <span className="text-shadowblue font-lato text-[13px] sm:text-sm leading-normal font-normal">
                     Director of Technology, CreativeGIG
                   </span>
                 </div>

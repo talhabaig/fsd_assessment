@@ -51,7 +51,7 @@ export default function Content() {
             </div>
 
             <Link href="/plantrip" className={` ${pathname === "/plantrip"}`}>
-              <button className="text-[#fff] flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
+              <button className="text-white flex items-center justify-center gap-[10px] py-3 px-[22px] bg-khaki transition-none">
                 <span className="font-lato text-[20px] font-bold leading-normal">
                   Plan your trip
                 </span>
