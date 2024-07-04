@@ -3,7 +3,7 @@ export default function ContactFooter() {
   return (
     <>
       <div className="mt-[15rem]">
-        <img src="/contact_us_img.png" alt="" className="w-full h-auto" />
+        <img src="/sand.png" alt="" className="w-full h-auto" />
       </div>
     </>
   );
