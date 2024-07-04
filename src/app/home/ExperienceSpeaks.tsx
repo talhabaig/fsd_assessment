@@ -12,8 +12,8 @@ export default function ExperienceSpeaks() {
         </div>
         <div className="md:py-[25px] xl:px-[30px] flex flex-col items-start gap-[10px]">
           <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-            <div className="bg-darkslateblue flex justify-between basis-[49.4%]">
-              <div className="flex flex-col xl:basis-[57.7%] gap-[14px] items-start p-5 md:pt-[39.1px] md:pb-[20.99px] md:pl-[30.1px] xl:pt-[30px] 2xl:pt-[39.1px] xl:pr-0">
+            <div className="bg-darkslateblue flex justify-between basis-[49.4%] relative xl:h-[206px] 2xl:h-[229px]">
+              <div className="flex flex-col xl:basis-[62%] gap-[14px] items-start p-5 md:pt-[39.1px] md:pb-[20.99px] md:pl-[30.1px] xl:pt-[30px] 2xl:pt-[39.1px] xl:pr-0">
                 <div className="font-lato text-sm lg:text-[16px] xl:text-sm 2xl:text-[16px] text-white font-normal lg:leading-[24px] xl:leading-[20px] 2xl:leading-[24px] capitalize">
                   “Rareblocks made it so simple. Our new site is so much
                   beautiful and easier to work with than my old site. I just
@@ -28,17 +28,12 @@ export default function ExperienceSpeaks() {
                   </span>
                 </div>
               </div>
-              <div className="hidden xl:block md:basis-[42%]">
-                <SvgImage
-                  src="/testimonial-img.svg"
-                  alt="explore malysia"
-                  className="h-full"
-                  width="100%"
-                />
+              <div className="absolute right-[0px] top-[-44px] hidden xl:block xl:w-[221px] 2xl:w-[242px]">
+                  <img src="/testimonial-img-removebg-preview2.png" alt="" className="cover" />
               </div>
             </div>
-            <div className="bg-darkslateblue flex justify-between basis-[49.4%]">
-              <div className="flex flex-col xl:basis-[57.7%] gap-[14px] items-start p-5 md:pt-[39.1px] md:pb-[20.99px] md:pl-[30.1px] xl:pt-[30px] 2xl:pt-[39.1px] xl:pr-0">
+            <div className="bg-darkslateblue flex justify-between basis-[49.4%] relative xl:h-[206px] 2xl:h-[229px]">
+              <div className="flex flex-col xl:basis-[62%] gap-[14px] items-start p-5 md:pt-[39.1px] md:pb-[20.99px] md:pl-[30.1px] xl:pt-[30px] 2xl:pt-[39.1px] xl:pr-0">
                 <div className="font-lato text-sm lg:text-[16px] xl:text-sm 2xl:text-[16px] text-whitefont-normal lg:leading-[24px] xl:leading-[20px] 2xl:leading-[24px] capitalize">
                   “Rareblocks made it so simple. Our new site is so much
                   beautiful and easier to work with than my old site. I just
@@ -53,13 +48,8 @@ export default function ExperienceSpeaks() {
                   </span>
                 </div>
               </div>
-              <div className="hidden xl:block md:basis-[42%]">
-                <SvgImage
-                  src="/testimonial-img2.svg"
-                  alt="explore malysia"
-                  className=""
-                  width="100%"
-                />
+              <div className="absolute right-[0px] top-[-28px] hidden xl:block xl:w-[180px] 2xl:w-[198px]">
+                <img src="/testimonial-img2-removebg-preview.png" alt="" />
               </div>
             </div>
           </div>

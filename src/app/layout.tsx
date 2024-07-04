@@ -4,9 +4,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 import "./main.css";
 import styles from "./layout.module.css";
-import {Nav} from "../components/Nav";
-import {Footer} from "../components/Footer";
-
+import { Nav } from "../components/Nav";
+import { Footer } from "../components/Footer";
+import NextTopLoader from "nextjs-toploader";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,19 +22,27 @@ export default function RootLayout({ children }: Props) {
     <html lang="en">
       <body className={inter.className}>
         {/* {children} */}
+        <NextTopLoader
+          color="#DFA42E"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3}
+          crawl={true}
+          showSpinner={false}
+          easing="ease"
+          speed={200}
+          shadow="0 0 10px #DFA42E,0 0 5px #DFA42E"
+        />
         <section className={styles.container}>
-            <Nav />
+          <Nav />
 
-            <header className={styles.header}>
-            </header>
+          <header className={styles.header}></header>
 
-            <main className={styles.main}>{children}</main>
+          <main className={styles.main}>{children}</main>
 
-            <footer className={styles.footer}>
-
-            </footer>
-            <Footer />
-          </section>
+          <footer className={styles.footer}></footer>
+          <Footer />
+        </section>
       </body>
     </html>
   );
