@@ -34,7 +34,7 @@ export default function ExperienceSpeaks() {
             </div>
             <div className="bg-darkslateblue flex justify-between basis-[49.4%] relative xl:h-[206px] 2xl:h-[229px]">
               <div className="flex flex-col xl:basis-[62%] gap-[14px] items-start p-5 md:pt-[39.1px] md:pb-[20.99px] md:pl-[30.1px] xl:pt-[30px] 2xl:pt-[39.1px] xl:pr-0">
-                <div className="font-lato text-sm lg:text-[16px] xl:text-sm 2xl:text-[16px] text-whitefont-normal lg:leading-[24px] xl:leading-[20px] 2xl:leading-[24px] capitalize">
+                <div className="font-lato text-sm lg:text-[16px] xl:text-sm 2xl:text-[16px] text-white font-normal lg:leading-[24px] xl:leading-[20px] 2xl:leading-[24px] capitalize">
                   “Rareblocks made it so simple. Our new site is so much
                   beautiful and easier to work with than my old site. I just
                   choose the page, make the change.”

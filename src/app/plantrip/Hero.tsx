@@ -50,7 +50,7 @@ export default function Hero() {
               </div>
             </div>
             <button
-              className="px-[22px] py-[10px] lg:px-[15px] 2xl:px-[16px] 2xl:text-[16px] lg:py-[0] lg:h-[3rem] lg:mt-[1.4rem] lg:text-[10px] text-[16px] font-bold leading-normal text-white bg-royalblue  border-2 self-stretch"
+              className="px-[22px] py-[10px] lg:px-[15px] 2xl:px-[30px] 2xl:text-[18px] lg:py-[0] lg:h-[3rem] lg:mt-[1.4rem] lg:text-[10px] text-[16px] font-bold leading-normal text-white bg-royalblue  border-2 self-stretch"
               type="submit"
             >
               Search

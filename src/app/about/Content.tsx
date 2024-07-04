@@ -1,11 +1,36 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ExploreMalysia from "../home/ExploreMalysia";
 import ExperienceSpeaks from "../home/ExperienceSpeaks";
+import axios from "axios";
+
+interface IApiResponse {
+  visionAndMission: {
+    text: string;
+    mission: string;
+    vision: string;
+  };
+  halalTravelExperience: {
+    text: string;
+    title: string;
+  };
+}
 export default function Content() {
   const pathname = usePathname();
+  const [data, setData] = useState<IApiResponse | null>(null);
+  useEffect(() => {
+    axios
+      .get(`${process.env.NEXT_PUBLIC_BACKEND_URL}about-us`)
+      .then((response) => {
+        console.log("response", response.data);
+        setData(response.data);
+      })
+      .catch((error) => {
+        console.log("error", error);
+      });
+  }, []);
   return (
     <div className="pb-24 px-8">
       <div className="p-8 bg-white max-w-[1062px] xs:h-[610px] md:h-[430px] m-auto md:mt-[-3rem] xs:mt-0 z-1 relative">
@@ -13,26 +38,12 @@ export default function Content() {
           <img src="/Vision&mission.png" alt="vision&mission" />
         </div>
         <div className="text-desertsand flex justify-center items-center flex-col ">
-          <span>
-            At Luxe club, our mission is to revolutionize the travel experience
-            by offering luxurious, culturally authentic, and halal-compliant
-            journeys. We are dedicated to providing personalized, high-quality
-            services that cater to the unique needs and values of our clients,
-            ensuring every trip is memorable, enriching, and stress-free.
-          </span>
+          <span>{data?.visionAndMission?.mission}</span>
         </div>
         <br />
         <br />
         <div className="text-desertsand flex justify-center items-center flex-col ">
-          <span>
-            {" "}
-            Our vision is to be the leading provider of halal travel
-            experiences, setting the industry standard for luxury, cultural
-            authenticity, and exceptional service. We aspire to inspire and
-            empower travelers to explore the world with confidence, knowing that
-            their values and preferences are at the heart of every journey we
-            craft.{" "}
-          </span>
+          <span> {data?.visionAndMission?.vision} </span>
         </div>
       </div>
 
@@ -41,12 +52,10 @@ export default function Content() {
           <div className="basis-[47.7%] flex flex-col gap-[38px] items-start">
             <div className="flex flex-col gap-[19px] items-start">
               <div className="text-charcoalblack font-playfair-display text-[24px] lg:text-[48px] font-bold lg:leading-[62px] leading-[36px] capitalize">
-                Experience Halal Travel Like Never Before
+                {data?.halalTravelExperience?.title}
               </div>
               <p className="text-charcoalblack font-lato text-[18px] font-normal leading-[28px]">
-                We are pioneers in the halal travel industry, dedicated to
-                providing exceptional, culturally rich travel experiences that
-                adhere to halal standards.
+                {data?.halalTravelExperience?.text}
               </p>
             </div>
 
@@ -63,8 +72,8 @@ export default function Content() {
           </div>
         </div>
       </div>
-      <ExploreMalysia/>
-      <ExperienceSpeaks/>
+      <ExploreMalysia />
+      <ExperienceSpeaks />
     </div>
   );
 }
