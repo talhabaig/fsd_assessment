@@ -114,7 +114,7 @@ export const Nav = () => {
             >
               <button
                 onClick={handleClose}
-                className="text-white font-lato bg-oceanBlue hover:bg-goldenSun mb-5 md:mb-0 uppercase font-lato font-bold md:text-sm lg:text-[16px] leading-normal py-2 px-4 md:px-[22px] md:py-[14px]"
+                className="text-white font-lato bg-oceanBlue hover:bg-goldenSun mb-5 md:mb-0 uppercase font-bold md:text-sm lg:text-[16px] leading-normal py-2 px-4 md:px-[22px] md:py-[14px]"
               >
                 Contact Us
               </button>

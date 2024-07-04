@@ -30,7 +30,6 @@ export default function Content({ setSubmitted }: ContentProps) {
         `${process.env.NEXT_PUBLIC_BACKEND_URL}contact-us`,
         formData
       );
-      console.log("Response:", response.data);
       setFormData({
         firstName: "",
         lastName: "",
