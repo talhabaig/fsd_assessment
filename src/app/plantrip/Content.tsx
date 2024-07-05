@@ -94,7 +94,7 @@ export default function Content() {
             </div>
             <Link href="/about" className={` ${pathname === "/about"}`}>
                 <button className="flex items-center justify-center gap-[10px] py-2 px-4 lg:py-3 lg:px-[22px] bg-khaki transition-none">
-                  <span className="text-white font-lato text-[16px] md:text-[20px] font-bold leading-normal">
+                  <span className="text-white font-lato text-[16px] xs:text-[16px] md:text-[20px] font-bold leading-normal">
                     About us
                   </span>
                 </button>

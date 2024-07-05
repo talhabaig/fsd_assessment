@@ -45,14 +45,14 @@ export default function Content({ setSubmitted }: ContentProps) {
 
   return (
     <div className="w-full flex flex-col gap-20 mt-[7.4rem]">
-      <div className="flex justify-center items-center mv-">
+      <div className="flex justify-center items-center">
         <img
-          src="/contact_us.png"
+          src="/Contact_us.png"
           alt="contact_us"
-          className="w-[471px] h-[120px]"
+          className="md:w-[471px] xs:w-[400px] h-[120px] w-[350px]"
         />
       </div>
-      <div className="">
+      <div>
         <div className="flex justify-center items-center w-full px-4">
           <div className="p-8 bg-white ">
             <div className="flex flex-col gap-[33px]">

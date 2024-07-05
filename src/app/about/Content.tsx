@@ -24,7 +24,6 @@ export default function Content() {
     axios
       .get(`${process.env.NEXT_PUBLIC_BACKEND_URL}about-us`)
       .then((response) => {
-        console.log("response", response.data);
         setData(response.data);
       })
       .catch((error) => {
