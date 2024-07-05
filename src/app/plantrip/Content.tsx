@@ -43,7 +43,7 @@ export default function Content() {
   const pathname = usePathname();
   return (
     <div>
-      <div className="flex items-center justify-around gap-[25rem] xs:gap-[30px] lg:gap-[22rem] xl:gap-[28rem]">
+      <div className="flex flex-col justify-center items-center md:items-center md:justify-around gap-[25rem] xs:gap-[30px] lg:gap-[22rem] xl:gap-[28rem]">
         <div className="text-[48px] font-bold capitalize text-[#452C1A] w-[40rem] xs:w-[15rem] xs:text-[20px] lg:text-[30px] lg:w-[22rem] xl:text-[48px] xl:w-[36rem] ">
           Experience Halal Travel Like Never Before
         </div>
@@ -77,29 +77,28 @@ export default function Content() {
         ))}
       </div>
       <div className="mt-[4rem] 3xl:flex 3xl:justify-end 3xl:mt-[8rem] ">
-        <div className="xs:px-[3rem] xs:absolute md:absolute md:pl-[23rem] md:pr-[6rem] xl:pl-[26rem] 2xl:pl-[32.4rem] 3xl:pl-[0] 3xl:pr-[10rem]">
-          {/* <SvgImage
+        <div className="xs:px-[6rem] xs:absolute md:absolute md:pl-[23rem] md:pr-[6rem] xl:pl-[26rem] 2xl:pl-[32.4rem] 3xl:pl-[0] 3xl:pr-[10rem]">
+          <SvgImage
             src="/sascha-bosshard.png"
             alt="sascha"
             className=""
             width="100%"
-          /> */}
-          <img src="/sascha-bosshard.png" alt="sascha" className="w-full" />
+          />
         </div>
 
-        <div className="flex bg-white xs:px-[8px] xs:py-[10px]  xs:w-[15rem] xs:relative xs:top-[3rem] xs:left-[1rem] md:w-[20rem] md:px-[40px] md:top-[2rem] md:left-[6rem] lg:w-[26rem] xl:w-[38rem] xl:top-[2rem] 2xl:left-[10rem] 2xl:w-[40rem] 2xl:py-[18px] 3xl:left-[-43rem]">
+        <div className="flex xs:leading-normal bg-white xs:px-[8px] xs:py-[10px]  xs:w-[15rem] xs:relative xs:top-[13rem] xs:left-[6rem] sm:top-[17rem] sm:left-[6rem] md:w-[25rem] md:px-[40px] md:top-[2rem] md:left-[6rem] lg:w-[26rem] xl:w-[38rem] xl:top-[2rem] 2xl:left-[10rem] 2xl:w-[40rem] 2xl:py-[18px] 3xl:left-[-43rem]">
           <div className="flex flex-col gap-6 xs:gap-2 md:gap-3 lg:gap-4">
-            <div className="text-[48px] font-bold capitalize text-[#452C1A] font-playfair-display w-[40rem] xs:w-[15rem] xs:text-[16px] lg:text-[30px] lg:w-[22rem] xl:text-[48px] xl:w-[36rem] ">
+            <div className="text-[48px] font-bold capitalize text-[#452C1A] font-playfair-display w-[40rem] xs:w-[15rem] xs:text-[16px] md:text-[30px] md:w-[22rem] xl:text-[48px] xl:w-[36rem] ">
               Experience Halal Travel Like Never Before
             </div>
-            <div className="text-[20px] font-normal text-darygray capitalize font-lato leading-8 xs:text-[12px] xs:w-[14rem] lg:text-[18px] lg:w-[20rem] xl:text-[28px] xl:w-[33rem]">
+            <div className="text-[20px] xs:leading-normal font-normal text-darygray capitalize font-lato leading-8 xs:text-[12px] xs:w-[14rem] lg:text-[18px] lg:w-[20rem] xl:text-[28px] xl:w-[33rem]">
               We are pioneers in the halal travel industry, dedicated to
               providing exceptional, culturally rich travel experiences that
               adhere to halal standards.
             </div>
             <Link href="/about" className={` ${pathname === "/about"}`}>
                 <button className="flex items-center justify-center gap-[10px] py-2 px-4 lg:py-3 lg:px-[22px] bg-khaki transition-none">
-                  <span className="text-white font-lato text-[16px] md:text-[20px] font-bold leading-normal">
+                  <span className="text-white font-lato text-[16px] xs:text-[16px] md:text-[20px] font-bold leading-normal">
                     About us
                   </span>
                 </button>
@@ -107,7 +106,7 @@ export default function Content() {
           </div>
         </div>
       </div>
-      <div className="px-8 xs:mt-[5rem] md:mt-[10rem] lg:mt-[15rem] xl:mt-[7rem] 2xl:mt-[6rem]">
+      <div className="px-8 xs:mt-[16rem] md:mt-[10rem] lg:mt-[15rem] xl:mt-[7rem] 2xl:mt-[6rem]">
         <ExperienceSpeaks />
       </div>
     </div>

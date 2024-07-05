@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div className="w-full">
       <Hero />
-      <div className="mt-[7rem] flex items-center justify-center">
+      <div className="xs:mt-[2rem] md:mt-[7rem] flex items-center justify-center">
         <Content />
       </div>
     </div>
