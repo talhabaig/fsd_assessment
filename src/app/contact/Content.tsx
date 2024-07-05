@@ -49,7 +49,7 @@ export default function Content({ setSubmitted }: ContentProps) {
         <img
           src="/contact_us.png"
           alt="contact_us"
-          className="w-[471px] h-[120px]"
+          className="md:w-[471px] xs:w-[400px] h-[120px] w-[350px]"
         />
       </div>
       <div className="">
