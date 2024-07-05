@@ -37,7 +37,13 @@ export default function Content() {
           <img src="/Vision&mission.png" alt="vision&mission" />
         </div>
         <div className="text-desertsand flex justify-center items-center flex-col ">
-          <span>{data?.visionAndMission?.mission}</span>
+          {data && data?.visionAndMission?.mission ? (
+            <span>{data?.visionAndMission?.mission}</span>
+          ) : (
+            <div className="text-[48px] text-charcoalblack font-playfair-display font-bold">
+              Nothing to Fetch !
+            </div>
+          )}
         </div>
         <br />
         <br />
@@ -51,7 +57,11 @@ export default function Content() {
           <div className="basis-[47.7%] flex flex-col gap-[38px] items-start">
             <div className="flex flex-col gap-[19px] items-start">
               <div className="text-charcoalblack font-playfair-display text-[24px] lg:text-[48px] font-bold lg:leading-[62px] leading-[36px] capitalize">
-                {data?.halalTravelExperience?.title}
+                {data && data?.halalTravelExperience?.title ? (
+                  <span>{data?.halalTravelExperience?.title}</span>
+                ) : (
+                  <div>Nothing to Fetch !</div>
+                )}
               </div>
               <p className="text-charcoalblack font-lato text-[18px] font-normal leading-[28px]">
                 {data?.halalTravelExperience?.text}
