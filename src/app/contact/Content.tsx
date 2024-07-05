@@ -52,7 +52,7 @@ export default function Content({ setSubmitted }: ContentProps) {
           className="md:w-[471px] xs:w-[400px] h-[120px] w-[350px]"
         />
       </div>
-      <div className="">
+      <div>
         <div className="flex justify-center items-center w-full px-4">
           <div className="p-8 bg-white ">
             <div className="flex flex-col gap-[33px]">
