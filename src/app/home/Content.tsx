@@ -184,7 +184,7 @@ export default function Content() {
           </div>
           <div className="pt-4 lg:pt-8 basis-[42.5%] md:basis-[47%] lg:basis-[42.5%] bg-alabaster">
             <div className="flex items-center justify-center gap-[99px]">
-              <div className="basis-[85%] lg:basis-[80%] xl:basis-[64%] flex flex-col gap-2">
+              <div className="basis-[85%] xs:basis-[75%] md:basis-[85%] lg:basis-[80%] 2xl:basis-[64%] flex flex-col gap-2">
                 <div className="bg-white flex justify-center items-center shrink-0 px-2 lg:px-3 py-3 gap-1 md:gap-2 lg:gap-3">
                   <Link
                     href="/plantrip"
@@ -209,7 +209,17 @@ export default function Content() {
                 </div>
 
                 <div className="flex flex-col">
-                  <div className="w-full h-[160px] xs:h-[177.612px] bg-cover bg-[url('/plan-trip-card-img.png')] bg-no-repeat"></div>
+                  <div className="w-full h-[160px] xs:h-[177.612px] bg-cover bg-[url('/plan-trip-card-img.png')] bg-no-repeat relative">
+                    <Link
+                      href="/tracktrip" className={`${pathname === "/tracktrip"}`}
+                    >
+                      <div className="flex justify-center items-center p-[10px] w-[98px] h-[23px] absolute right-0 top-[122.46px] xs:top-[139.46px] bg-khaki">
+                        <span className="text-white text-center font-inter text-[12px] font-medium leading-[15px] capitalize">
+                          Track trip
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
                   <div className="h-[155.8px] py-4 px-3 md:py-5 md:px-4 bg-white rounded-[0px_0px_7px_7px]">
                     <div className="mb-2 xl:mb-4">
                       <span className="bg-lightgray py-[5px] px-[10px] font-inter text-sm font-semibold text-almostblack">
