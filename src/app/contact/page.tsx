@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import Content from "./Content";
 import Contact_footer from "./Contact_footer";
 
-export default function page() {
+export default function Page() {
   const [submitted, setSubmitted] = useState(false);
   return (
     <>

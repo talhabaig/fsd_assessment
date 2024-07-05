@@ -77,21 +77,22 @@ export default function Content() {
         ))}
       </div>
       <div className="mt-[4rem] 3xl:flex 3xl:justify-end 3xl:mt-[8rem] ">
-        <div className="xs:px-[3rem] xs:absolute md:absolute md:pl-[12rem] md:pr-[6rem] xl:pl-[20rem] 2xl:pl-[35rem] 3xl:pl-[0] 3xl:pr-[10rem]">
-          <SvgImage
+        <div className="xs:px-[3rem] xs:absolute md:absolute md:pl-[23rem] md:pr-[6rem] xl:pl-[26rem] 2xl:pl-[32.4rem] 3xl:pl-[0] 3xl:pr-[10rem]">
+          {/* <SvgImage
             src="/sascha-bosshard.png"
             alt="sascha"
             className=""
             width="100%"
-          />
+          /> */}
+          <img src="/sascha-bosshard.png" alt="sascha" className="w-full" />
         </div>
 
-        <div className="flex bg-white xs:px-[8px] xs:py-[10px]  xs:w-[15rem] xs:relative xs:top-[3rem] xs:left-[1rem] md:w-[20rem] md:px-[40px] md:top-[5rem] md:left-[5rem] lg:w-[26rem] xl:w-[38rem] xl:top-[2rem] 2xl:left-[15rem] 2xl:w-[40rem] 2xl:py-[18px] 3xl:left-[-43rem]">
+        <div className="flex bg-white xs:px-[8px] xs:py-[10px]  xs:w-[15rem] xs:relative xs:top-[3rem] xs:left-[1rem] md:w-[20rem] md:px-[40px] md:top-[2rem] md:left-[6rem] lg:w-[26rem] xl:w-[38rem] xl:top-[2rem] 2xl:left-[10rem] 2xl:w-[40rem] 2xl:py-[18px] 3xl:left-[-43rem]">
           <div className="flex flex-col gap-6 xs:gap-2 md:gap-3 lg:gap-4">
-            <div className="text-[48px] font-bold capitalize text-[#452C1A] w-[40rem] xs:w-[15rem] xs:text-[16px] lg:text-[30px] lg:w-[22rem] xl:text-[48px] xl:w-[36rem] ">
+            <div className="text-[48px] font-bold capitalize text-[#452C1A] font-playfair-display w-[40rem] xs:w-[15rem] xs:text-[16px] lg:text-[30px] lg:w-[22rem] xl:text-[48px] xl:w-[36rem] ">
               Experience Halal Travel Like Never Before
             </div>
-            <div className="text-[20px] font-normal text-darygray capitalize xs:text-[12px] xs:w-[14rem] lg:text-[18px] lg:w-[20rem] xl:text-[28px] xl:w-[33rem]">
+            <div className="text-[20px] font-normal text-darygray capitalize font-lato leading-8 xs:text-[12px] xs:w-[14rem] lg:text-[18px] lg:w-[20rem] xl:text-[28px] xl:w-[33rem]">
               We are pioneers in the halal travel industry, dedicated to
               providing exceptional, culturally rich travel experiences that
               adhere to halal standards.
