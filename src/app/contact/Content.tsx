@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { usePathname } from "next/navigation";
 
 interface ContentProps {
   setSubmitted: (submitted: boolean) => void;
 }
 
 export default function Content({ setSubmitted }: ContentProps) {
+  const navigate = usePathname();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -48,7 +50,9 @@ export default function Content({ setSubmitted }: ContentProps) {
     }
     setIsloading(false);
   };
-
+  const handleBack = () => {
+    setError(null); 
+  };
   return (
     <div className="w-full flex flex-col gap-20 mt-[7.4rem]">
       <div className="flex justify-center items-center">
@@ -66,6 +70,12 @@ export default function Content({ setSubmitted }: ContentProps) {
                 <span className="text-reddishbrown text-[20px] font-semibold leading-7">
                   {error}
                 </span>
+                <button
+                  onClick={handleBack}
+                  className="mt-4 px-[22px] py-[10px] text-[16px] font-bold leading-normal text-white bg-oceanBlue border-2 self-stretch"
+                >
+                  Go Back
+                </button>
               </div>
             </div>
           ) : (
@@ -74,6 +84,7 @@ export default function Content({ setSubmitted }: ContentProps) {
                 <span className="text-reddishbrown text-[20px] font-semibold leading-7">
                   Enter detail to connect with our team
                 </span>
+
                 <div>
                   <div className="grid grid-cols-2 gap-y-2 gap-x-4 ">
                     <div className="flex flex-col gap-1">
