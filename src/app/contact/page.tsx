@@ -8,7 +8,7 @@ export default function Page() {
   const [submitted, setSubmitted] = useState(false);
   return (
     <>
-      {!submitted ? (
+      {submitted ? (
         <div className="flex justify-center items-center min-h-[100vh]">
           <div className="flex gap-5">
             <span className="text-reddishbrown text-[20px] font-semibold leading-7">
