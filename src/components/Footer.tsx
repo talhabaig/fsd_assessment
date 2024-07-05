@@ -91,7 +91,7 @@ export function Footer() {
                       <span className="cursor-pointer">
                         <FontAwesomeIcon icon={faPhone} />
                       </span>
-                      <span className="cursor-pointer">+1 (999) 888-77-66</span>
+                      <span><a href="tel:+1(999)888-77-66">+1 (999) 888-77-66</a></span>
                     </div>
                     <div className="flex gap-2">
                       <span className="cursor-pointer">
@@ -113,7 +113,7 @@ export function Footer() {
                     </span>
                     <span className="cursor-pointer">
                       <a
-                        href="https://goo.gl/maps/6x5jkDZgode7pP4v6"
+                        href="https://www.google.com/maps/search/Moscow,+Myasnitskaya+22%2F2%2F5,+Office+4/@55.5802498,36.7248418,9z/data=!3m1!4b1?entry=ttu"
                         target="_blank"
                       >
                         483920, Moscow, Myasnitskaya 22/2/5, Office 4
@@ -176,7 +176,7 @@ export function Footer() {
         <div className=" text-center">
           <span className="text-[12px] sm:text-sm font-normal leading-[14px] sm:leading-[26px] font-lato text-azuremist opacity-[0.7]">
             Design by Mohitrana{" "}
-            <span className="text-skyBlue underline">(Behance)</span>{" "}
+            <span className="text-skyBlue underline"><a href="https://www.behance.net/mohitkharabe">(Behance)</a></span>{" "}
           </span>
         </div>
         <div className=" text-center">

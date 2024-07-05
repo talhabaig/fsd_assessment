@@ -1,7 +1,9 @@
+"use client"
 import SvgImage from "@/components/SvgImage";
 import React from "react";
 import ExperienceSpeaks from "../home/ExperienceSpeaks";
-
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 const destinations = [
   {
     id: 1,
@@ -38,15 +40,17 @@ const destinations = [
 ];
 
 export default function Content() {
+  const pathname = usePathname();
   return (
     <div>
       <div className="flex items-center justify-around gap-[25rem] xs:gap-[30px] lg:gap-[22rem] xl:gap-[28rem]">
         <div className="text-[48px] font-bold capitalize text-[#452C1A] w-[40rem] xs:w-[15rem] xs:text-[20px] lg:text-[30px] lg:w-[22rem] xl:text-[48px] xl:w-[36rem] ">
           Experience Halal Travel Like Never Before
         </div>
+        <Link href="/about" className={` ${pathname === "/about"}`}>
         <button className="text-khaki text-[20px] font-semibold px-[22px] py-[14px] border-2 border-[reddishbrown] xs:px-[10px] xs:py-[10px] xs:text-[10px] xl:text-[20px] xl:py-[14px] lg:px-[22px]">
           Explore more
-        </button>
+        </button></Link>
       </div>
       <div className="flex flex-col md:flex-row flex-wrap md:justify-between md:items-start gap-[22px] lg:gap-[34px] pt-[4rem] px-[6rem] xl:px-[10rem]">
         {destinations.map((destination) => (
@@ -93,9 +97,13 @@ export default function Content() {
               providing exceptional, culturally rich travel experiences that
               adhere to halal standards.
             </div>
-            <button className="bg-khaki px-[10px] py-[10px] w-[6rem] xs:px-[0] xs:text-[15px] xs:w-[5rem] xs:py-[5px] lg:text-[18px] lg:px-[12px] lg:py-[8px] lg:w-[7rem] xl:text-[24px] xl:px-[18px] xl:py-[12px] xl:w-[10rem]">
-              About us
-            </button>
+            <Link href="/about" className={` ${pathname === "/about"}`}>
+                <button className="flex items-center justify-center gap-[10px] py-2 px-4 lg:py-3 lg:px-[22px] bg-khaki transition-none">
+                  <span className="text-white font-lato text-[16px] md:text-[20px] font-bold leading-normal">
+                    About us
+                  </span>
+                </button>
+              </Link>
           </div>
         </div>
       </div>
