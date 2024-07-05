@@ -5,7 +5,7 @@ export default function ExperienceSpeaks() {
   return (
     <div className="py-8 md:p-12 lg:p-16 xl:px-28 2xl:py-20 3xl:container 3xl:max-w-[1500px] 3xl:mx-auto">
       <div className="flex flex-col gap-[40px] lg:gap-[65px]">
-        <div className="flex flex-col items-center justify-center gap-5">
+        <div className="flex flex-col items-center justify-center gap-5 md:mt-8">
           <div className="w-full md:w-[509px] text-center text-oceanBlue font-playfair-display text-[24px] md:text-[35px] lg:text-[48px] font-extrabold leading-[35px] md:leading-[50px] lg:leading-[62px] capitalize">
             <span>Experiences That Speak for Themselves</span>
           </div>
